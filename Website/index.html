@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise AI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WeatherWise AI</a>
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="journey.html">The Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="supervisors.html">Supervisors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 h-full w-64 bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-4">
+            <button id="closeMobileMenu" class="text-white mb-4"><i class="fas fa-times fa-2x"></i></button>
+            <ul class="flex flex-col gap-4">
+                <li><a href="index.html" class="text-lg hover:text-blue-300">Home</a></li>
+                <li><a href="research.html" class="text-lg hover:text-blue-300">Research</a></li>
+                <li><a href="journey.html" class="text-lg hover:text-blue-300">The Journey</a></li>
+                <li><a href="supervisors.html" class="text-lg hover:text-blue-300">Supervisors</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Overlay for Mobile Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Hero Slider (Owl Carousel) -->
+    <section class="hero-slider">
+        <div class="owl-carousel owl-theme">
+            <div class="item relative">
+                <img src="assets/bg1.png" alt="Weather Image 1" class="w-full h-[500px] object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <h1 class="text-3xl md:text-5xl font-bold mb-4">Welcome to WeatherWise AI</h1>
+                        <p class="text-lg md:text-xl mb-6">Enhancing Weather Prediction Through Data, AI, and Physics</p>
+                        <a href="#about" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item relative">
+                <img src="assets/bg2.jpg" alt="Weather Image 2" class="w-full h-[500px] object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <h1 class="text-3xl md:text-5xl font-bold mb-4">Climate Resilience</h1>
+                        <p class="text-lg md:text-xl mb-6">Building Smarter Forecasts for Uganda</p>
+                        <a href="#about" class="btn btn-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item relative">
+                <img src="assets/bg3.jpg" alt="Weather Image 3" class="w-full h-[500px] object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <h1 class="text-3xl md:text-5xl font-bold mb-4">Data-Driven Solutions</h1>
+                        <p class="text-lg md:text-xl mb-6">Advancing Weather Prediction with AI</p>
+                        <a href="#about" class="btn btn-light">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-10 bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-8">About WeatherWise AI</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-lg">
+                        At WeatherWise AI, we advance the frontiers of weather forecasting by integrating machine learning, atmospheric physics, and remote sensing. Our work focuses on developing spatiotemporal models that embed fundamental physical laws into AI systems, enabling accurate, physically consistent, and high-resolution predictions — even in data-scarce environments like Uganda.
+                    </p>
+                    <p class="text-lg">
+                        With the growing challenges of floods, droughts, and shifting local weather patterns, reliable micro-scale forecasting has become essential for safeguarding agriculture, improving disaster preparedness, and enhancing climate resilience. Through research, innovation, and physics-guided machine learning, we are committed to building next-generation forecasting tools that not only predict the weather but deepen our understanding of atmospheric dynamics to support vulnerable communities.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/forecast.jpg" class="img-fluid rounded" alt="Weather Research">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-10 bg-gray-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h2 class="text-2xl font-bold mb-4">Vision</h2>
+                    <p class="text-lg">
+                        To empower communities with accurate, physically-grounded weather intelligence, bridging the gap between science and society to build a climate-resilient future.
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-2xl font-bold mb-4">Mission</h2>
+                    <p class="text-lg">
+                        At WeatherWise AI, we develop next-generation forecasting models that integrate machine learning, atmospheric physics, and remote sensing to deliver high-resolution, interpretable, and actionable weather insights — especially for data-scarce and climate-vulnerable regions.
+                    </p>
+                </div>
+            </div>
+            <!-- <a href="journey.html" class="btn btn-primary">Learn More About Me</a> -->
+        </div>
+    </section>
+
+    <!-- Explore My Work -->
+    <section class="py-10 bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-8">Explore Our Work</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Research Project</h3>
+                    <p class="card-text">Spatiotemporal Physics-Informed Machine Learning Model for Weather Prediction in Uganda</p>
+                    <p class="card-text"><strong>Tech Focus:</strong> Machine Learning | Remote Sensing | Geospatial Analysis | Physics-Informed Neural Networks</p>
+                    <a href="research.html" class="btn btn-primary">Dive Deeper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay Connected -->
+    <section class="py-10 bg-gray-100">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-8">Stay Connected</h2>
+            <p class="text-lg mb-4">Follow my research and journey:</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="https://orcid.org/0000-0002-1715-022X" class="text-blue-600"><i class="fab fa-orcid fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/immaculate-kamusiime/" class="text-blue-600"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/KamusiiimeImmaculate" class="text-blue-600"><i class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:immyk2018@gmail.com" class="text-blue-600"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="mailto:kamusiime.immaculate@students.mak.ac.ug" class="text-blue-600"><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container text-center">
+            <p>© 2025 WeatherWise AI | Powered by Immaculate Kamusiime</p>
+            <p>Building Smarter Forecasts for a Resilient Future.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
